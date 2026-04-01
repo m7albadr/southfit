@@ -9,8 +9,8 @@ export const womenConfig: BranchConfig = {
     ar: "القوة ما لها حدود",
   },
   location: {
-    en: "Qibla — Souad Complex B, Kuwait City",
-    ar: "قبلة — مجمع سعاد B — الكويت",
+    en: "Jebla — Souad Complex B, Kuwait City",
+    ar: "جبلة — مجمع سعاد B — الكويت",
   },
   hours: {
     en: "12:00 PM – 10:00 PM, Saturday – Thursday",
