@@ -94,7 +94,7 @@ export const menConfig: BranchConfig = {
   promotions: [
     { en: "Free trial available — book via WhatsApp", ar: "تجربة مجانية — كلمنا واتساب واحجز" },
     { en: "Bring 1 friend = 1 free week added to your subscription", ar: "جيب رفيجك معاك = أسبوع مجاني على اشتراكك" },
-    { en: "Bring 4 friends = 1 free workshop with Abdulaziz Bouheimed", ar: "جيب 4 رفجانك = ورشة مجانية مع عبدالعزيز بوحيمد" },
+    { en: "Bring 4 friends = 1 free workshop with Abdulaziz Bouheimed", ar: "جيب 4 اصدقائك = ورشة مجانية مع عبدالعزيز بوحيمد" },
   ],
   faq: [
     {
