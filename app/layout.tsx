@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://southfit.vercel.app"),
   title: "SouthFit Kuwait — CrossFit & Fitness",
   description:
     "SouthFit Kuwait — Premium CrossFit, Bootcamp, Personal Training & more. Two branches: Men's in Mangaf, Women's in Jebla.",
@@ -18,6 +19,10 @@ export const metadata: Metadata = {
     "men gym Kuwait",
   ],
   authors: [{ name: "SouthFit Kuwait" }],
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
   openGraph: {
     title: "SouthFit Kuwait — CrossFit & Fitness",
     description:
@@ -26,14 +31,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     alternateLocale: "ar_KW",
     siteName: "SouthFit Kuwait",
-    images: [{ url: "/logo.jpg", width: 1080, height: 1080, alt: "SouthFit Kuwait Logo" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "SouthFit Kuwait — CrossFit & Fitness",
     description:
       "Premium CrossFit, Bootcamp, Personal Training & more. Men's & Women's branches in Kuwait.",
-    images: ["/logo.jpg"],
   },
 };
 
