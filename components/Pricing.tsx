@@ -51,13 +51,13 @@ function PricingCards({
             >
               {badgeLabel && (
                 <div
-                  className="absolute -right-8 top-4 rotate-45 px-10 py-1 text-[10px] font-bold tracking-wider text-white"
+                  className="absolute -right-10 top-3 rotate-45 px-12 py-1 text-[10px] font-bold tracking-wider text-white z-10"
                   style={{ backgroundColor: config.colors.primary }}
                 >
                   {badgeLabel}
                 </div>
               )}
-              <h3 className="text-xs font-semibold tracking-wider text-text-muted sm:text-sm">
+              <h3 className={`text-xs font-semibold tracking-wider text-text-muted sm:text-sm ${badgeLabel ? "pt-4" : ""}`}>
                 {(isAr ? plan.name.ar : plan.name.en).toUpperCase()}
               </h3>
               <div className="mt-3 flex items-baseline gap-1.5 sm:mt-4">
