@@ -7,7 +7,13 @@ import Image from "next/image";
 
 export default function LandingPage() {
   const [lang, setLang] = useState<"en" | "ar">("en");
+  const [mounted, setMounted] = useState(0);
   const isAr = lang === "ar";
+
+  // Force re-animate on back navigation
+  useEffect(() => {
+    setMounted(Date.now());
+  }, []);
 
   useEffect(() => {
     const saved = localStorage.getItem("sf-lang") as "en" | "ar" | null;
@@ -21,7 +27,7 @@ export default function LandingPage() {
   }, [lang, isAr]);
 
   return (
-    <div className="relative min-h-[100dvh] flex flex-col items-center justify-center bg-[#050508] px-5 overflow-hidden">
+    <div key={mounted} className="relative min-h-[100dvh] flex flex-col items-center justify-center bg-[#050508] px-5 overflow-hidden">
       {/* Subtle background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full opacity-[0.07] blur-[150px] bg-white pointer-events-none" />
 

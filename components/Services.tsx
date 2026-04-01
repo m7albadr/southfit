@@ -129,10 +129,8 @@ export default function Services({ config }: { config: BranchConfig }) {
               transition={{ duration: 0.4, delay: (i % 4) * 0.05 }}
             >
               <div
-                className={`group relative overflow-hidden rounded-2xl border border-white/5 bg-gradient-to-br ${cardGradients[i % cardGradients.length]} p-5 sm:p-8 sm:transition-transform sm:duration-300 sm:hover:-translate-y-2`}
+                className="group rounded-2xl border border-white/5 bg-dark-card p-5 sm:p-8 sm:transition-transform sm:duration-300 sm:hover:-translate-y-1"
               >
-                {/* Blur orb accent */}
-                <div className={`pointer-events-none absolute -right-8 -top-8 hidden h-24 w-24 rounded-full ${cardAccents[i % cardAccents.length]} blur-2xl sm:block`} />
                 <div
                   className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 sm:h-14 sm:w-14"
                   style={{

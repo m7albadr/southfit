@@ -238,10 +238,10 @@ function MobileDumbbell({ color }: { color: string }) {
       transition={{ duration: 1.5, delay: 0.5 }}
     >
       <motion.div
-        animate={{ y: [0, -8, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        animate={{ y: [0, -10, 0], rotate: [0, 3, 0, -3, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="relative"
-        style={{ opacity: 0.06 }}
+        style={{ opacity: 0.12 }}
       >
         <svg
           width="280"

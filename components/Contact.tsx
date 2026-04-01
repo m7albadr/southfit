@@ -143,11 +143,10 @@ export default function Contact({ config }: { config: BranchConfig }) {
             className="overflow-hidden rounded-2xl border border-white/5"
           >
             <iframe
-              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d${
-                config.branch === "men" ? "48.1332087" : "47.9700328"
-              }!3d${
-                config.branch === "men" ? "29.1004993" : "29.3692441"
-              }!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDA2JzAxLjgiTiA0OMKwMDcnNTkuNiJF!5e0!3m2!1sen!2skw!4v1`}
+              src={config.branch === "men"
+                ? "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.5!2d48.1332087!3d29.1004993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf0700710f426f%3A0xc984e7c147f166a7!2sSouthFit%20Kuwait!5e0!3m2!1sen!2skw!4v1"
+                : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.5!2d47.9700328!3d29.3692441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf850067312ae5%3A0x6ffc9cf02c68e76c!2sSouthFit%20Women!5e0!3m2!1sen!2skw!4v1"
+              }
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "300px" }}

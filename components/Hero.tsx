@@ -52,19 +52,6 @@ export default function Hero({ config }: { config: BranchConfig }) {
       <Hero3D color={config.colors.primary} />
 
       {/* Content */}
-      {/* Mobile background element */}
-      <motion.div
-        className="absolute top-1/3 right-1/4 sm:hidden"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        style={{
-          width: "200px",
-          height: "200px",
-          borderRadius: "50%",
-          border: `1px solid ${config.colors.primary}15`,
-        }}
-      />
-
       <div className="relative z-10 mx-auto max-w-7xl px-5 py-20 pb-24 text-center sm:px-6 sm:py-48 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50, scale: 0.95 }}

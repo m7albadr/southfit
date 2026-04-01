@@ -48,9 +48,7 @@ export default function Coaches({ config }: { config: BranchConfig }) {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: (i % 4) * 0.08 }}
             >
-              <div className={`group relative overflow-hidden rounded-2xl border border-white/5 bg-gradient-to-br ${coachGradients[i % coachGradients.length]} p-6 text-center sm:p-8 sm:transition-transform sm:duration-300 sm:hover:-translate-y-1`}>
-                {/* Blur orb */}
-                <div className={`pointer-events-none absolute -right-8 -top-8 hidden h-24 w-24 rounded-full ${coachAccents[i % coachAccents.length]} blur-2xl sm:block`} />
+              <div className="group rounded-2xl border border-white/5 bg-dark-card p-6 text-center sm:p-8 sm:transition-transform sm:duration-300 sm:hover:-translate-y-1">
                 {/* Avatar */}
                 <div
                   className="mx-auto mb-6 relative flex h-20 w-20 items-center justify-center rounded-2xl text-2xl font-black text-white transition-transform duration-300 group-hover:scale-110"
