@@ -190,7 +190,7 @@ export default function Pricing({ config }: { config: BranchConfig }) {
 
         {/* Tabs */}
         <div className="mt-10 flex justify-center sm:mt-12">
-          <div className="inline-flex w-full max-w-lg flex-wrap justify-center gap-1 rounded-full border border-white/10 bg-dark-card p-1 sm:w-auto sm:flex-nowrap">
+          <div className="inline-flex w-full max-w-2xl flex-wrap justify-center gap-1 rounded-full border border-white/10 bg-dark-card p-1.5 sm:w-auto sm:flex-nowrap">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
